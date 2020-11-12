@@ -1,0 +1,143 @@
+{
+  "info": {
+    "_postman_id": "054e274a-a2a8-490d-a269-79c26b61cbba",
+    "name": "TesteMercadoEletronico",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"NumeroPedido\":\"123456\",\r\n  \"itensPedido\": [\r\n  {\r\n    \"Descricao\": \"Item A\",\r\n    \"PrecoUnitario\": 10,\r\n    \"Quantidade\": 1\r\n  },\r\n  {\r\n    \"Descricao\": \"Item B\",\r\n    \"PrecoUnitario\": 5,\r\n    \"Quantidade\": 2\r\n  }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44390/api/pedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44390",
+          "path": [
+            "api",
+            "pedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:44390/api/pedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44390",
+          "path": [
+            "api",
+            "pedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"NumeroPedido\":\"123456\",\r\n  \"itensPedido\": [\r\n  {\r\n    \"Descricao\": \"Item A\",\r\n    \"PrecoUnitario\": 10,\r\n    \"Quantidade\": 1,\r\n    \"Id\": 1006\r\n  },\r\n  {\r\n    \"Descricao\": \"Item B\",\r\n    \"PrecoUnitario\": 5,\r\n    \"Quantidade\": 2,\r\n    \"Id\": 1007\r\n  }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44390/api/pedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44390",
+          "path": [
+            "api",
+            "pedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "id",
+            "value": "1002",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://localhost:44390/api/pedido",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44390",
+          "path": [
+            "api",
+            "pedido"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostStatus",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\":\"APROVADO\",\r\n  \"itensAprovados\": 4,\r\n  \"valorAprovado\": 21,\r\n  \"pedido\":\"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:44390/api/status",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "44390",
+          "path": [
+            "api",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

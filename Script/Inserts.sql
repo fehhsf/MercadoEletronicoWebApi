@@ -1,0 +1,8 @@
+INSERT INTO WorkoutType
+VALUES('Triplet', GETDATE(), NULL, 1, 0)
+
+INSERT INTO MovementType
+VALUES('LPO', GETDATE(), NULL, 1, 0)
+
+INSERT INTO Movement
+VALUES(1, 'Power Clean', GETDATE(), NULL, 1, 0)
